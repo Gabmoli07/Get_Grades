@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<!-- COPYRIGHT 2018 Gabriel Molina, Estate of New York City
+INTRODUCTION COPYRIGHT 2018 Gabriel Molina
+All rights reserved
+No part of this publication may be reproduced, stored in a retrival system
+or transmitted in any form or by any means, mechanical, electronic, photo-
+copying, recording or otherwise the prior written permission of the
+publisher. For information, address Microsoft Co., Inc, 107 West, New York 11020
+Piblished By Microsoft Co., Inc
+New York/New York
+Manufactored in the United States of America
+First Coding
+Designed by Jones, Bonnie
+ -->
+
+<html>
+<head>
+
+<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+<title>Average Grades by Year</title>
+<style type="text/css">	
+	tr  {text-align:center}
+table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background-image: url("https://4vector.com/i/free-vector-green-natural-blur-the-background-06-vector_017062_6.jpg");
+ height: 100%;
+ width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+	
+
+	th, td {
+	
+    border: 3px solid black;
+    
+}
+
+            
+</style>
+<script language="javascript">         
+function func16(){
+ total=(parseInt(f1.h16.value)+parseInt(f1.e16.value)+parseInt(f1.m16.value)+parseInt(f1.c16.value)+parseInt(f1.q16.value));
+            return f1.a16.value=total/5;
+}
+
+function func17(){
+ total=(parseInt(f1.h17.value)+parseInt(f1.e17.value)+parseInt(f1.m17.value)+parseInt(f1.c17.value)+parseInt(f1.q17.value));
+            return f1.a17.value=total/5;
+}
+function func18(){
+ total=(parseInt(f1.h18.value)+parseInt(f1.e18.value)+parseInt(f1.m18.value)+parseInt(f1.c18.value)+parseInt(f1.q18.value));
+            return f1.a18.value=total/5;
+}
+</script>
+</head>
+<body>
+<form name="f1">
+
+<table WIDTH="400" ALIGN="center">
+	<caption>Average Grades by Year</caption>
+    <COL SPAN="4" ALIGN="center">
+    <THEAD>
+    	<tr>
+        	<th COLSPAN="4" ALIGN="center"><h2>Report Card</h2>
+            </th>
+        </tr>
+        <tr>
+        	<th>&nbsp;</th>
+            <th>2016<br> Part1</th>
+            <th>2017<br> Part2</th>
+            <th>2018<br> Part3</th>
+        </tr>
+    </THEAD>
+    <TBODY>
+    	<tr>
+        	<th>History</th>
+            <td><input type= "text" maxlength="3" size ="3" name="h16"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="h17"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="h18"></td>
+        </tr>
+        <tr>
+        	<th>English</th>
+            <td><input type= "text" maxlength="3" size ="3" name="e16"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="e17"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="e18"></td>
+        </tr>
+        <tr>
+        	<th>Math</th>
+            <td><input type= "text" maxlength="3" size ="3" name="m16"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="m17"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="m18"></td>
+       	</tr>
+        <tr>
+        	<th>Computer</th>
+            <td><input type= "text" maxlength="3" size ="3" name="c16"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="c17"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="c18"></td>
+        </tr>
+        <tr>
+        	<th>Chemical</th>
+            <td><input type= "text" maxlength="3" size ="3" name="q16"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="q17"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="q18"></td>
+        </tr>
+        <tr>
+        	<th>&nbsp;</th>
+            <td><input type="button" value="avg16" onClick="func16()"></td>
+            <td><input type="button" value="avg17" onClick="func17()"></td>
+            <td><input type="button" value="avg18" onClick="func18()"></td>
+        </tr>
+        <tr>
+        	<th>Average</th>
+            <td><input type= "text" maxlength="3" size ="3" name="a16"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="a17"></td>
+            <td><input type= "text" maxlength="3" size ="3" name="a18"></td>
+        </tr>
+    </TBODY>
+    </table>
+    </form>
+</body>
+</html>
